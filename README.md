@@ -25,7 +25,7 @@ This project uses polyfills to make certain non-native features available in the
 - Errors from AWS (i.e., permissions errors) aren’t returned properly. All errors are returned as a “NetworkingError”. However, the actual errors are logged in src/shims/xhr/xmlhttprequest.ts so if logging is enabled it should be easy to debug.
   - I believe this causes the SDK to attempt multiple retries (sometimes the retries use a different region so you need to look at the first error to see what really happened)
 - Currently uses the browser version of the aws-sdk. Will look into supporting the node version but it might require more polyfills and/or shims for things like Buffers, streams, sockets, etc.
-  - Note: the browser implementations are controlled by the `browser` field in the aws-sdk package.json
+  - Note: the browser implementations are controlled by the [browser field](https://github.com/defunctzombie/package-browser-field-spec) in the aws-sdk package.json
 - AWS.S3.upload doesn’t work properly due to the Blob polyfill. Further investigation is needed to correct this
 
 ### Making changes to source
