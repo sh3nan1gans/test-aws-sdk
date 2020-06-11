@@ -161,10 +161,12 @@ const generateConfig = () => {
 
 const baseConfig = {
   name: configName,
+  target: 'node',
   module: {
     rules: [
       {
         test: /\.tsx?$|\.jsx?$/,
+        exclude: /@babel(?:\/|\\{1,2})runtime|core-js/,
         loader: 'babel-loader',
         options: {
           presets: ['@babel/preset-env'],
