@@ -12,6 +12,14 @@ The following pre-transpiled JS libraries are available in `code/libraries`:
 
 There is also an example service that uses the aws library in `code/services/testAwsWithLibrary/testAwsWithLibrary.js`
 
+### Shims
+
+This project uses a shim for proxying xhr requests to ClearBlade's [http library](https://github.com/ClearBlade/native-libraries/blob/master/http.md). The source for this shim is located in `src/shims/xhr/xmlhttprequest.ts`
+
+### Polyfills
+
+This project uses polyfills to make certain non-native features available in the code engine. These are located in `src/util/polyfills`
+
 ### Limitations
 
 - Errors from AWS (i.e., permissions errors) aren’t returned properly. All errors are returned as a “NetworkingError”. However, the actual errors are logged in src/shims/xhr/xmlhttprequest.ts so if logging is enabled it should be easy to debug.
