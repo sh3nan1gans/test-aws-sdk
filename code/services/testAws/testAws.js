@@ -10642,6 +10642,7 @@ var XMLHttpRequest = function (XMLHttpRequestEventTarget) {
 
         _this.statusText = '';
         _this.responseText = err;
+        global.log('HTTP error: ', err);
 
         _this.dispatchEvent({
           type: 'error'
@@ -10787,7 +10788,7 @@ aws_sdk__WEBPACK_IMPORTED_MODULE_0___default.a.config.update({
 var credentials = new aws_sdk__WEBPACK_IMPORTED_MODULE_0___default.a.Credentials(_util_aws_credentials__WEBPACK_IMPORTED_MODULE_1__[/* access_key_id */ "a"], _util_aws_credentials__WEBPACK_IMPORTED_MODULE_1__[/* secret_access_key */ "e"]);
 
 function testAws(_, resp) {
-  myAws.SQS.sendMessage().then(function (data) {
+  myAws.SNS.publish().then(function (data) {
     resp.success(data);
   }, function (err) {
     resp.error(err);
@@ -21846,7 +21847,6 @@ AWS.XHRClient = AWS.util.inherit({
       }));
     }, false);
     xhr.addEventListener('error', function () {
-      log('error listener', xhr.responseText);
       errCallback(AWS.util.error(new Error('Network Failure'), {
         code: 'NetworkingError'
       }));

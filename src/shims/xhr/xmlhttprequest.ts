@@ -123,6 +123,7 @@ const XMLHttpRequest = (function (XMLHttpRequestEventTarget) {
         this.status = 400; // since the Requests object doesn't return status or response headers, status will be hardcoded
         this.statusText = '';
         this.responseText = err;
+        global.log('HTTP error: ', err);
         this.dispatchEvent({ type: 'error' });
         return;
       }
