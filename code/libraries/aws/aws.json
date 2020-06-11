@@ -1,0 +1,7 @@
+{
+  "api": "",
+  "dependencies": "xmlhttprequest,domparser",
+  "description": "",
+  "name": "aws",
+  "visibility": "system"
+}

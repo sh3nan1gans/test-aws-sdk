@@ -1,0 +1,7 @@
+{
+  "api": "",
+  "dependencies": "http",
+  "description": "",
+  "name": "xmlhttprequest",
+  "visibility": "system"
+}
