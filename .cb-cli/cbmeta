@@ -1,0 +1,6 @@
+{
+    "developer_email": "a@a.com",
+    "messaging_url": "127.0.0.1:1883",
+    "platform_url": "http://127.0.0.1:9000",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJiYWRhZDJlNjBiYmVkNjk4ZGVjODhlZWVkNzA1Iiwic2lkIjoiN2U1MzFjNjAtZDdkMy00NzBlLWFjZjgtNTg0ZWNkZDgxYzZiIiwidXQiOjEsInR0IjoxLCJleHAiOi0xLCJpYXQiOjE1OTEzOTMyODR9.FI1WKwOoBWHtOZdsQfTMOaLwGm9MCGBR_CY4T1wzHDE"
+}

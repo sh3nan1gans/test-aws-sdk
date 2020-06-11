@@ -1,0 +1,9 @@
+{
+    "auth": true,
+    "description": "",
+    "messaging_url": "127.0.0.1:1883",
+    "name": "test-aws-sdk",
+    "platform_url": "http://127.0.0.1:9000",
+    "system_key": "d6efd5ed0bd8a485bdaec2b4f565",
+    "system_secret": "D6EFD5ED0BFE9BCDA489F4ABEC73"
+}
