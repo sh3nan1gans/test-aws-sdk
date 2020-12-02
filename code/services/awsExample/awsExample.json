@@ -4,8 +4,10 @@
     "concurrency": 0,
     "dependencies": "log,aws",
     "execution_timeout": 60,
-    "logging_enabled": true,
-    "name": "testAwsWithLibrary",
-    "params": [],
+    "logging_enabled": false,
+    "name": "awsExample",
+    "params": [
+        ""
+    ],
     "run_user": ""
 }

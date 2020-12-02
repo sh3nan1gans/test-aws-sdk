@@ -2,8 +2,8 @@
     "auth": true,
     "description": "",
     "messaging_url": "127.0.0.1:1883",
-    "name": "test-aws-sdk",
+    "name": "test-aws-sdk-new",
     "platform_url": "http://127.0.0.1:9000",
-    "system_key": "d6efd5ed0bd8a485bdaec2b4f565",
-    "system_secret": "D6EFD5ED0BFE9BCDA489F4ABEC73"
+    "system_key": "f886bffc0bfcb5e7e1b8bbefcc04",
+    "system_secret": "F886BFFC0BDEF08B8791F89DE6CE01"
 }

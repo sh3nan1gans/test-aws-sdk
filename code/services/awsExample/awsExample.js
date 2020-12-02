@@ -12,19 +12,16 @@
  * @param {CbServer.Resp} resp
  */
 
-const region = 'us-east-2';
-
-function testAwsWithLibrary(req, resp) {
-  AWS.config.update({ region });
-  const credentials = new AWS.Credentials('<access_key_id>', '<secret_access_key>');
+function awsExample(req, resp) {
+  AWS.config.update({ region: 'us-east-2' });
+  const credentials = new AWS.Credentials('your_access_key_id', 'your_secret_access_key');
   const sns = new AWS.SNS({
-    credentials: credentials,
+    credentials,
   });
   const params = {
-    TopicArn: 'arn:aws:sns:us-east-2:750868284189:testTopic',
-    Message: 'hello!',
+    Name: 'your_topic',
   };
-  sns.publish(params, function (err, data) {
+  sns.createTopic(params, function (err, data) {
     if (err) {
       resp.error(err);
     } else {
